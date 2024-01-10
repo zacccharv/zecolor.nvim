@@ -1039,7 +1039,17 @@ local function get_groups()
         ["@lsp.type.variable"] = { link = "@variable" },
         ["@lsp.type.namespace.cs"] = { link = "@lsp.namespace.namespace" },
         ["@lsp.type.variable.cs"] = { fg = colors.blue },
-        ["@lsp.type.fieldName.cs"] = { fg = colors.blue }
+        ["@lsp.type.fieldName.cs"] = { fg = colors.blue },
+        ["@boolean.c_sharp"] = { fg = colors.blue },
+        ["@number.c_sharp"] = { fg = colors.blue },
+        ["@lsp.type.keyword.cs"] = { fg = colors.red, italic = true },
+        ["@repeat.c_sharp"] = { fg = colors.red, italic = true },
+        ["@keyword.operator.c_sharp"] = { fg = colors.red, italic = true },
+        ["@type.qualifier.c_sharp"] = { fg = colors.red, italic = true },
+        ["@keyword.c_sharp"] = { fg = colors.red, italic = true },
+        ["@lsp.type.event.cs"] = { fg = colors.green },
+        ["FoldColumn"] = { bg = colors.black },
+        ["Bold"] = { bold = true },
     }
 
     for group, hl in pairs(config.overrides) do
