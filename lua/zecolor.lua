@@ -239,8 +239,7 @@ local function get_groups()
         end
     end
 
-    local groups
-    ZecolorColorschemu = {
+    local groups = {
         ZecolorhemeFg0 = { fg = colors.fg0 },
         ZecolorFg1 = { fg = colors.fg1 },
         ZecolorFg2 = { fg = colors.fg2 },
@@ -1040,15 +1039,7 @@ local function get_groups()
         ["@lsp.type.variable"] = { link = "@variable" },
         ["@lsp.type.namespace.cs"] = { link = "@lsp.namespace.namespace" },
         ["@lsp.type.variable.cs"] = { fg = colors.blue },
-        ["@lsp.type.fieldName.cs"] = { fg = colors.blue },
-        ["@boolean.c_sharp"] = { link = "@boolean" },
-        ["@number.c_sharp"] = { link = "@number" },
-        ["@keyword.c_sharp"] = { "@keyword" },
-        ["@lsp.type.keyword.cs"] = { link = "@keyword.c_sharp" },
-        ["@repeat.c_sharp"] = { link = "@keyword._c_sharp" },
-        ["@keyword.operator.c_sharp"] = { link = "@keyword.c_sharp" },
-        ["@type.qualifier.c_sharp"] = { link = "@keyword.c_sharp" },
-        ["@lsp.type.event.cs"] = { fg = colors.green },
+        ["@lsp.type.fieldName.cs"] = { fg = colors.blue }
     }
 
     for group, hl in pairs(config.overrides) do

@@ -41,7 +41,7 @@ describe("tests", function()
     }
 
     zecolor.setup({ undercurl = false, underline = false })
-    assert.are.same(ze_color.config, expected)
+    assert.are.same(zecolor.config, expected)
   end)
 
   it("should override a hightlight color", function()
@@ -125,8 +125,8 @@ describe("tests", function()
       },
     }
 
-    ze_color.setup(config)
-    ze_color.load()
+    zecolor.setup(config)
+    zecolor.load()
 
     local group_id = vim.api.nvim_get_hl_id_by_name("Comment")
     local values = {
