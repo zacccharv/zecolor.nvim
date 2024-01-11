@@ -944,7 +944,7 @@ local function get_groups()
         DapUIWinSelect = { link = "ZecolorYellow" },
         NeogitDiffDelete = { link = "DiffDelete" },
         NeogitDiffAdd = { link = "DiffAdd" },
-        NeoTreeGitUntracked = { fg = colors.orange },
+        NeoTreeGitUntracked = { fg = colors.green },
         NeogitHunkHeader = { link = "WinBar" },
         NeogitHunkHeaderHighlight = { link = "WinBarNC" },
         DiffviewStatusModified = { link = "ZecolorGreenBold" },
